@@ -12,87 +12,82 @@
 </head>
 
 <body>
-    <header id="header" class="scrollspy">
-        <section class="header">
-            <a href="#" data-target="mobile-demo" class="header__hamburger sidenav-trigger hide-on-med-and-up">
-                <i class="material-icons ">menu</i>
-            </a>
-            <h1 class="header__brand">
-                <strong>Wojciech</strong> Niemiec
-            </h1>
-            <nav class="header-nav hide-on-small-only">
-
-                <ul class="header-nav__list">
-                    <li class="header-nav__list-item">
+    <header id="header" class="o-header scrollspy">
+        <section class="o-container">
+            <div class="c-nav">
+                <a href="#" data-target="mobile-demo" class="c-nav__hamburger sidenav-trigger hide-on-med-and-up">
+                    <i class="material-icons c-nav__hamburger-i">menu</i>
+                </a>
+                <h1 class="c-nav__brand">
+                    <strong>Wojciech</strong> Niemiec
+                </h1>
+                <nav class="c-nav__h-conteiner hide-on-small-only">
+                    <ul class="c-nav__list">
+                        <li>
+                            <a class="c-nav__link" href="#about">O mnie</a>
+                        </li>
+                        <li>
+                            <a class="c-nav__link" href="#skills">Umiejętności</a>
+                        </li>
+                        <li>
+                            <a class="c-nav__link" href="#moje-projekty">Moje projekty</a>
+                        </li>
+                        <li>
+                            <a class="c-nav__link" href="#contact">Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="sidenav" id="mobile-demo">
+                    <li>
                         <a href="#about">O mnie</a>
                     </li>
-                    <li class="header-nav__list-item">
+                    <li>
                         <a href="#skills">Umiejętności</a>
                     </li>
-                    <li class="header-nav__list-item">
+                    <li>
                         <a href="#moje-projekty">Moje projekty</a>
                     </li>
-                    <li class="header-nav__list-item">
+                    <li>
                         <a href="#contact">Kontakt</a>
                     </li>
-
                 </ul>
+            </div>
 
-
-            </nav>
-            <div class="header__img">
+            <div class="c-img">
                 <img class="responsive-img " src="/img/header-bg.jpg">
             </div>
             <!-- <div class=" header__background"></div> -->
-            <ul class="sidenav" id="mobile-demo">
-                <li>
-                    <a href="#about">O mnie</a>
-                </li>
-                <li>
-                    <a href="#skills">Umiejętności</a>
-                </li>
-                <li>
-                    <a href="#moje-projekty">Moje projekty</a>
-                </li>
-                <li>
-                    <a href="#contact">Kontakt</a>
-                </li>
-            </ul>
         </section>
     </header>
     <main>
-        <section id="about" class="scrollspy about">
-            <div class="container">
+        <section id="about" class="o-container scrollspy about">
 
+            <h1 class="section__title">Dlaczego programuje</h1>
+            <p class="section__content">Czy znajomość języka programowania może ułatwić życie? Jestem przekonany że tak. Dzięki tej umiejętności mogę
+                więcej tworzyć, rozwiązywać trudniejsze problemy, w krótszym czasie.
+            </p>
+            <p class="section__content">Takie języki jak java script dzięki swojej popularności umożliwiają coraz większą elastyczność w ich zastosowaniu.
+                Oznacza to dla mnie większe możliwości. Kiedy mam pomysł, wymagający nietypowych rozwiązań i indywidualnego
+                podejścia zaczynam programować.
+            </p>
+            <p class="section__content">Zapraszam do skontaktowanie się ze mną, ponieważ z radością poznam więcej osób pracujących kreatywnie. Myślę
+                że razem stworzyć coś fajnego. </p>
+            <div class="about__social-container">
 
+                <a href="https://codepen.io/gf1200/" target="blank">
+                    <i class="fab fa-facebook about__social-icon"></i>
+                </a>
+                <a href="https://codepen.io/gf1200/" target="blank">
+                    <i class="fab fa-github about__social-icon"></i>
+                </a>
+                <a href="https://codepen.io/gf1200/" target="blank">
+                    <i class="fab fa-codepen about__social-icon"></i>
+                </a>
 
-
-                <h1 class="section__title">Dlaczego programuje</h1>
-                <p class="section__content">Czy znajomość języka programowania może ułatwić życie? Jestem przekonany że tak. Dzięki tej umiejętności
-                    mogę więcej tworzyć, rozwiązywać trudniejsze problemy, w krótszym czasie.
-                </p>
-                <p class="section__content">Takie języki jak java script dzięki swojej popularności umożliwiają coraz większą elastyczność w ich zastosowaniu.
-                    Oznacza to dla mnie większe możliwości. Kiedy mam pomysł, wymagający nietypowych rozwiązań i indywidualnego
-                    podejścia zaczynam programować.
-                </p>
-                <p class="section__content">Zapraszam do skontaktowanie się ze mną, ponieważ z radością poznam więcej osób pracujących kreatywnie. Myślę
-                    że razem stworzyć coś fajnego. </p>
-                <div class="about__social-container">
-
-                    <a href="https://codepen.io/gf1200/" target="blank">
-                        <i class="fab fa-facebook about__social-icon"></i>
-                    </a>
-                    <a href="https://codepen.io/gf1200/" target="blank">
-                        <i class="fab fa-github about__social-icon"></i>
-                    </a>
-                    <a href="https://codepen.io/gf1200/" target="blank">
-                        <i class="fab fa-codepen about__social-icon"></i>
-                    </a>
-
-                </div>
             </div>
+
         </section>
-        <section id="skills" class="scrollspy">
+        <section id="skills" class="o-container scrollspy">
             <div class="skills">
                 <div class="skills__item-container skills__item-container--front">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 522.468 522.469"
@@ -162,7 +157,7 @@
 
             </div>
         </section>
-        <section id="moje-projekty" class="scrollspy moje-projekty">
+        <section id="moje-projekty" class="o-container scrollspy moje-projekty">
             <h1 class="section__title ">moje projekty</h1>
             <p class="section__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possim
             </p>
