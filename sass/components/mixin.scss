@@ -1,0 +1,20 @@
+@mixin bp($point) {
+  $bp-medium: "screen and (min-width: 600px)";
+  $bp-large: "screen and (min-width: 992px)";
+  $bp-x-large: "screen and (min-width: 1200px)";
+
+  @if $point == medium {
+    @media #{$bp-medium} {
+      @content;
+    }
+  } @else if $point == large {
+    @media #{$bp-large} {
+      @content;
+    }
+  } @else if $point == x-large {
+    $bp-x-large: "(min-width: 1200px)";
+    @media #{$bp-x-large} {
+      @content;
+    }
+  }
+}

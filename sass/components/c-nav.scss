@@ -1,0 +1,41 @@
+// główna naigacja strony
+.c-nav {
+  &__hamburger {
+    display: inline-block;
+  }
+  &__hamburger-i {
+    color: $heading-color;
+    font-size: 2.2rem;
+    margin: 1rem;
+  }
+  &__brand {
+    color: $heading-color;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    @include bp(medium) {
+      margin-bottom: 0;
+    }
+  }
+  &__h-conteiner {
+    background-color: transparent;
+    box-shadow: 0 0 0;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+
+    li {
+      float: none;
+    }
+  }
+  &__link {
+    transition: color 0.3s ease-in-out;
+
+    color: $link-color;
+    &:hover {
+      color: $prime-color;
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+}

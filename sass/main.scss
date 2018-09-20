@@ -1,116 +1,21 @@
+// Biblioteki
 @import "./materialize";
 
-@mixin bp($point) {
-  $bp-medium: "screen and (min-width: 600px)";
-  $bp-large: "screen and (min-width: 992px)";
-  $bp-x-large: "screen and (min-width: 1200px)";
+// Variables
+@import "./components/zmienne.scss";
 
-  @if $point == medium {
-    @media #{$bp-medium} {
-      @content;
-    }
-  } @else if $point == large {
-    @media #{$bp-large} {
-      @content;
-    }
-  } @else if $point == x-large {
-    $bp-x-large: "(min-width: 1200px)";
-    @media #{$bp-x-large} {
-      @content;
-    }
-  }
-}
+//Mixin
+@import "./components/mixin.scss";
 
-// body {
-//   @include bp(medium) {
-//     background: #212121;
-//   }
-// }
-
-$prime-color: #0091ea;
-$heading-color: #263238;
-$link-color: #212121;
-$text-color: #37474f;
-$icon-about-color: $prime-color; //lighten($heading-color, 10%);
-$border-color: darken(rgb(245, 245, 245), 5%);
-
-a {
-  color: $link-color;
-  transition: color 0.3s ease-in-out;
-  &:hover {
-    color: $prime-color;
-  }
-}
+//Common
+@import "./components/common.scss";
 
 // layout / objects
-.o-container {
-  margin: 0 auto 6rem auto;
-  max-width: 1280px;
-  width: 100%;
-  padding: 0 1rem;
-}
+@import "./components/layout.scss";
 
-.section {
-  &__title {
-    width: 80%;
-    color: $heading-color;
-    font-size: 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    margin: auto;
-  }
-  &__content {
-    text-align: center;
-    color: $text-color;
-    padding: 0 1rem;
-  }
-}
-
-.c-nav {
-  &__hamburger {
-    display: inline-block;
-  }
-  &__hamburger-i {
-    color: $heading-color;
-    font-size: 2.2rem;
-    margin: 1rem;
-  }
-  &__brand {
-    color: $heading-color;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 5rem;
-    @include bp(medium) {
-      margin-bottom: 0;
-    }
-  }
-  &__h-conteiner {
-    background-color: transparent;
-    box-shadow: 0 0 0;
-  }
-  &__list {
-    display: flex;
-    justify-content: center;
-
-    li {
-      float: none;
-    }
-  }
-  &__link {
-    transition: color 0.3s ease-in-out;
-
-    color: $link-color;
-    &:hover {
-      color: $prime-color;
-      background-color: rgba(0, 0, 0, 0);
-    }
-  }
-}
-
-.c-img {
-  max-width: 800px;
-  margin: auto;
-}
+// Components
+@import "./components/c-nav.scss";
+@import "./components/c-img.scss";
 
 .about {
   .section__content {
