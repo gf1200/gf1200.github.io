@@ -1,4 +1,4 @@
-<h3 align="center">projekt: Moje portfolio projekt</h3>
+<h3 align="center">projekt: Moje portfolio</h3>
 
 <p align="center">
 
