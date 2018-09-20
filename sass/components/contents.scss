@@ -1,0 +1,18 @@
+.c-content {
+  &__title {
+    width: 80%;
+    color: $heading-color;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+  }
+  &__paragrph {
+    text-align: center;
+    color: $text-color;
+    padding: 0 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

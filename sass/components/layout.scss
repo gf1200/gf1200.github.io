@@ -4,19 +4,3 @@
   width: 100%;
   padding: 0 1rem;
 }
-
-.section {
-  &__title {
-    width: 80%;
-    color: $heading-color;
-    font-size: 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    margin: auto;
-  }
-  &__content {
-    text-align: center;
-    color: $text-color;
-    padding: 0 1rem;
-  }
-}
