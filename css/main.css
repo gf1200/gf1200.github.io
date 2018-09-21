@@ -5666,7 +5666,7 @@ input[type=range]::-ms-thumb {
   padding-left: 16px;
   height: 1.5rem;
   line-height: 1.5rem;
-  letter-spacing: .4;
+  letter-spacing: 0.4;
   display: inline-block; }
   .table-of-contents a:hover {
     color: #a8a8a8;
