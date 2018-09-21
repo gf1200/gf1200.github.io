@@ -1,79 +1,26 @@
-//Fonts
+//  Fonts
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 // Biblioteki
 @import "./materialize";
 
-// Variables
+//  Variables
 @import "./components/zmienne.scss";
 
-//Mixin
+//  Mixin
 @import "./components/mixin.scss";
 
-//Common
+//  Common
 @import "./components/common.scss";
 
-// layout / objects
+//  Layout / objects
 @import "./components/layout.scss";
 
-// Components
+//  Components
 @import "./components/c-nav.scss";
 @import "./components/c-img.scss";
 @import "./components/contents.scss";
 @import "./components/c-social-nav.scss";
 @import "./components/skils.scss";
-
-.cta-btn {
-  height: auto;
-  border: 1.5px solid white;
-  border-radius: 5px;
-  background: transparent;
-  position: relative;
-  padding: 0.2rem 2rem;
-  margin: 1rem 0;
-
-  // &__arrow {
-  //   display: block;
-  //   font-size: 1rem;
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
-  //   transform: rotate(180deg);
-  // }
-
-  &:hover {
-    background: rgba(#ffffff, 0.2);
-  }
-  &:focus {
-    background: rgba(#ffffff, 0.4);
-  }
-}
-
-.moje-projekty {
-  .card {
-    &__title--in-line {
-      position: relative;
-      padding-right: 20px;
-    }
-    &__title-i--in-line {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-  }
-}
-
-.footer {
-  &__go-top {
-    display: inline-block;
-    color: aqua;
-  }
-}
-
-@include bp(medium) {
-  .list {
-    &--no-border {
-      border: none !important;
-    }
-  }
-}
+@import "./components/c-card.scss";
+@import "./components/c-btn.scss";

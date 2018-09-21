@@ -30,11 +30,8 @@
     }
   }
   &__link {
-    transition: color 0.3s ease-in-out;
-
     color: $link-color;
     &:hover {
-      color: $prime-color;
       background-color: rgba(0, 0, 0, 0);
     }
   }
