@@ -111,7 +111,7 @@
                         minima quisquam minus iusto ullam distinctio fugit culpa facilis, exercitationem optio dignissimos
                         aspernatur quo corporis in
                     </p>
-                    <button class="btn z-depth-0 c-btn hide-on-small-only" type="submit" name="action">kontakt
+                    <button class="btn z-depth-0 c-btn hide-on-small-only is-btn" type="submit" name="action">kontakt
 
                     </button>
 
@@ -292,6 +292,9 @@
                         <li class="collection-item grey darken-3 list--no-border">
                             <i class="material-icons left ">mail</i>gf1200@gmail.com</li>
                         </li>
+                        <li class="collection-item grey darken-3 list--no-border">
+                            <i class="material-icons left ">pin_drop</i>Kraków</li>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -299,7 +302,7 @@
         <div class="footer-copyright grey darken-3 grey-text">
             <div class="container ">
                 © 2018 Wojciech Niemiec
-                <a href="#header" class="grey-text right c-btn__go-top">TOP
+                <a href="#header" class="grey-text right c-btn__go-top">go top
                     <i class="material-icons right">arrow_upward</i>
                 </a>
             </div>
@@ -319,6 +322,11 @@
                 }, 350);
             })
             $('.scrollspy').scrollSpy({ scrollOffset: 70 });
+
+            $('.Classname').click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 600);
+                return false;
+            });
         });
     </script>
 </body>
