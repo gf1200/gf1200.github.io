@@ -109,7 +109,7 @@
                         Scss, metodologii: BEM, Mobile-first, material design, mam doświadczenie z CMS: Joomla, Wordpress,
                         korzystania z systemu kontroli wersji GIT.
                     </p>
-                    <button class="btn z-depth-0 c-btn hide-on-small-only is-btn" type="submit" name="action">kontakt
+                    <button id="cta-btn" class="btn z-depth-0 c-btn hide-on-small-only is-btn" type="submit" name="action">kontakt
 
                     </button>
 
@@ -319,32 +319,15 @@
         <div class="footer-copyright grey darken-3 grey-text">
             <div class="container ">
                 © 2018 Wojciech Niemiec
-                <a href="#header" class="grey-text right c-btn__go-top">go top
+                <a href="#header" id="go-top-btn" class="grey-text right c-btn__go-top">go top
                     <i class="material-icons right">arrow_upward</i>
                 </a>
             </div>
         </div>
     </footer>
-    <!--JavaScript at end of body for optimized loading-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
     <script type="text/javascript " src="js/bin/materialize.min.js "></script>
-    <script>
-        $(document).ready(function () {
-            $('.sidenav').sidenav();
-            $('.sidenav li').click(function () {
-                setTimeout(() => {
-                    let foo = true;
-                    $('.sidenav').sidenav('close');
-                }, 350);
-            })
-            $('.scrollspy').scrollSpy({ scrollOffset: 70 });
-
-            $('.Classname').click(function () {
-                $("html, body").animate({ scrollTop: 0 }, 600);
-                return false;
-            });
-        });
-    </script>
+    <script type="text/javascript " src="js/main.js "></script>
 </body>
 
 </html>
