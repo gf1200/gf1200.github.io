@@ -1,5 +1,12 @@
-<h3 align="center">projekt: moje portfolio</h3>
+# My portfolio web page
+ The website contains a description of the skills that I have, a list of developed projects, and contact details.
+ ## In this project I used
+ - MaterializeCSS
+ - Scss
+ - BEM methodology 
+ - jquery
+ - JS
+ - flex
 
-<p align="center">
-...
- </p>
+ ## Copyright
+Code Copyright 2018 Wojciech Niemiec.
