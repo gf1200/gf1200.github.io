@@ -9,4 +9,4 @@
  - flex
 
  ## Copyright
-Code Copyright 2018 Wojciech Niemiec.
+Copyright 2018 Wojciech Niemiec.
